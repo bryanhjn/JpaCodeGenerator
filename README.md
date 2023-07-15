@@ -44,24 +44,24 @@ A: 'Cause some programers may not have Lombok plugin installed. (It's 2023! Pls 
    
    - Copy the template code from this repository and paste them in the template editor
      
-     ![](./images/2023-07-15-15-04-25-image.png)
+     ![](.\image\2023-07-15-15-04-25-image.png)
 
 2. Connect to your database through "Database tools and SQL" plugins
 
 3. Right click the tables you want to generate JPA entities, primeKeys, repositorys. Choose "EasyCode" -> "Generate Code"
    
-   ![](C:\Users\huangjn\AppData\Roaming\marktext\images\2023-07-15-15-09-09-image.png)
+   ![](.\images\2023-07-15-15-09-09-image.png)
 
 4. In the popup window, click the "Choose" button on the right side of "Package"
    
-   ![](C:\Users\huangjn\AppData\Roaming\marktext\images\2023-07-15-14-53-32-image.png)
+   ![](.\images\2023-07-15-14-53-32-image.png)
 
 5. Choose the parent directory of the 'entity' & 'repository'
    
-   ![](C:\Users\huangjn\AppData\Roaming\marktext\images\2023-07-15-14-59-19-image.png)
+   ![](.\images\2023-07-15-14-59-19-image.png)
 
 6. Select the files you'd like to generate using EasyCode templates
    
-   ![](C:\Users\huangjn\AppData\Roaming\marktext\images\2023-07-15-15-12-16-image.png)
+   ![](.\images\2023-07-15-15-12-16-image.png)
 
 7. Done. You'll find these files in the package you chose in step5
