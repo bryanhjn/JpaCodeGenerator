@@ -6,6 +6,7 @@ $!{define.vm}
 
 ##使用宏定义设置包后缀
 #setPackageSuffix("entity")
+#set($pkCount = $tableInfo.pkColumn.size())
 
 ##使用全局变量实现默认包导入
 $!{autoImport.vm}
@@ -19,6 +20,9 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name = "${tool.hump2Underline($tableInfo.name)}")
+#if($pkCount > 1)
+@IdClass(${tableInfo.name}PK.class)
+#end
 public class ${tableInfo.name}Entity implements Serializable {
     private static final long serialVersionUID = $tool.serial();
 #foreach($column in $tableInfo.pkColumn)
