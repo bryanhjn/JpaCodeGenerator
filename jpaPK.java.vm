@@ -1,0 +1,44 @@
+##引入宏定义
+$!{define.vm}
+
+##使用宏定义设置回调（保存位置与文件后缀）
+#save("/entity", "PK.java")
+
+##使用宏定义设置包后缀
+#setPackageSuffix("entity")
+
+##使用全局变量实现默认包导入
+$!{autoImport.vm}
+import java.io.Serializable;
+
+/**
+ * JPA PrimeKey class for ${tool.hump2Underline($!tableInfo.name)} table
+ *
+ * @author $!author
+ */
+public class $!{tableInfo.name}PK implements Serializable {
+    private static final long serialVersionUID = $!tool.serial();
+#foreach($column in $tableInfo.pkColumn)
+    #if(${column.comment})/**
+     * ${column.comment}
+     */#end
+    
+    private $!{tool.getClsNameByFullName($column.type)} $!{column.name};
+#end
+
+#foreach($column in $tableInfo.pkColumn)
+##使用宏定义实现get,set方法
+#getSetMethod($column)
+#end
+
+    @Override
+    public String toString() {
+        return "$tableInfo.name{" + 
+        #foreach($column in $tableInfo.pkColumn)
+        "${column.name}=" + $column.name +#if($foreach.hasNext) ", " + 
+            #end
+        #end
+        "}";
+    }
+
+}
