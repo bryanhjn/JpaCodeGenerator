@@ -23,7 +23,7 @@
   
   - IntelliJ IDEA Ultimate
     
-    (Community Edition with Database Tool Plugin may also work. I didn't test it 'cause it's a paid plugin)
+    (Community Edition with "Database Tool" Plugin may also work. I didn't test it 'cause it's a paid plugin)
 
 - ##### Plugin：
   
