@@ -1,6 +1,21 @@
 # EasyCode模板 自动生成JPA实体类、主键类、仓库类。Template for automatically generating JPA entity, primeKey, and repository class
 
-### 
+<p align="center">
+  <a href="https://github.com/bryanhjn/JpaCodeGenerator/blob/main/LICENSE">
+    <img alt="Static Badge" src="https://img.shields.io/badge/license-MIT-green">
+  </a>
+  <a href="https://github.com/bryanhjn">
+    <img alt="Static Badge" src="https://img.shields.io/badge/author-bryanhjn-blue">
+  </a>
+  <a href="https://www.jetbrains.com.cn/idea">
+    <img alt="Static Badge" src="https://img.shields.io/badge/IDE-IntelliJ_IDEA-8A2BE2">
+  </a>
+  <a href="https://spring.io/projects/spring-data-jpa">
+    <img alt="Static Badge" src="https://img.shields.io/badge/ORM-Spring_Data_JPA-80ea6e">
+  </a>
+  
+
+</p>
 
 ### Requirement
 
@@ -50,18 +65,18 @@ A: 'Cause some programers may not have Lombok plugin installed. (It's 2023! Pls 
 
 3. Right click the tables you want to generate JPA entities, primeKeys, repositorys. Choose "EasyCode" -> "Generate Code"
    
-   ![](./images/2023-07-15-15-09-09-image.png)
+   ![](./image/2023-07-15-15-09-09-image.png)
 
 4. In the popup window, click the "Choose" button on the right side of "Package"
    
-   ![](./images/2023-07-15-14-53-32-image.png)
+   ![](./image/2023-07-15-14-53-32-image.png)
 
 5. Choose the parent directory of the 'entity' & 'repository'
    
-   ![](./images/2023-07-15-14-59-19-image.png)
+   ![](./image/2023-07-15-14-59-19-image.png)
 
 6. Select the files you'd like to generate using EasyCode templates
    
-   ![](./images/2023-07-15-15-12-16-image.png)
+   ![](./image/2023-07-15-15-12-16-image.png)
 
 7. Done. You'll find these files in the package you chose in step5
