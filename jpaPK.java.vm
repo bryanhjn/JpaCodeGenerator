@@ -40,5 +40,14 @@ public class $!{tableInfo.name}PK implements Serializable {
         #end
         "}";
     }
+    
+    public ${tableInfo.name}PK() {
+    }
+    
+    public ${tableInfo.name}PK(#foreach($column in $tableInfo.pkColumn)${tool.getClsNameByFullName($column.type)} ${column.name}#if($foreach.hasNext), #end #end) {
+        #foreach($column in $tableInfo.pkColumn)
+        this.${column.name} = ${column.name};
+        #end
+    }
 
 }
