@@ -44,7 +44,7 @@ A: 'Cause some programers may not have Lombok plugin installed. (It's 2023! Pls 
    
    - Copy the template code from this repository and paste them in the template editor
      
-     ![](.\image\2023-07-15-15-04-25-image.png)
+     ![](./image/2023-07-15-15-04-25-image.png)
 
 2. Connect to your database through "Database tools and SQL" plugins
 
