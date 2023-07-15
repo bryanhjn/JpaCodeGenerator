@@ -1,16 +1,16 @@
-# EasyCode自动生成JPA entity、primeKey、repository的模板。Template for automatically generating JPA entity, primeKey, and repository
+# EasyCode模板 自动生成JPA实体类、主键类、仓库类。Template for automatically generating JPA entity, primeKey, and repository class
 
 ### 
 
 ### Requirement
 
-- ###### IDE：
+- ##### IDE：
   
   - IntelliJ IDEA Ultimate
     
     (Community Edition with Database Tool Plugin may also work. I didn't test it 'cause it's a paid plugin)
 
-- ###### Plugin：
+- ##### Plugin：
   
   - Database tools and SQL
   
@@ -18,19 +18,19 @@
 
 ### Q&A:
 
-###### 问：为什么不用中文写文档？
+##### 问：为什么不用中文写文档？
 
 答：我懒得写双语。欢迎好心人翻译后提个PR噢~
 
-###### Q: Column Type dosen't match with Java Type.
+##### Q: Column Type dosen't match with Java Type.
 
 A: Open IDEA Settings - Other Settings - EasyCode - Type Mapper to change it manually.
 
-###### Q: Lack of some imports.
+##### Q: Lack of some imports.
 
 A: Manually imports them, if only a few files have this issue. Or edit the template file to import them for ALL files generate by this template.
 
-###### Q: Why there's so many getters, setters, constructors?
+##### Q: Why there's so many getters, setters, constructors?
 
 A: 'Cause some programers may not have Lombok plugin installed. (It's 2023! Pls Install it!)
 
@@ -44,7 +44,7 @@ A: 'Cause some programers may not have Lombok plugin installed. (It's 2023! Pls 
    
    - Copy the template code from this repository and paste them in the template editor
      
-     ![](C:\Users\huangjn\AppData\Roaming\marktext\images\2023-07-15-15-04-25-image.png)
+     ![](./images/2023-07-15-15-04-25-image.png)
 
 2. Connect to your database through "Database tools and SQL" plugins
 
